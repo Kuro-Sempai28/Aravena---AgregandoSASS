@@ -1,0 +1,107 @@
+* {
+    Margin:0;
+    padding:0;
+}
+body{
+    width: 100vw;
+    overflow: auto;
+}
+header{
+    width: 100%;
+    grid-area: header;
+}
+main{
+    width: 100%;
+}
+
+h1{
+    font-size: 100px;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    grid-area: h1; 
+    margin-top: 10%;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+ // HOME
+
+.grid{
+    display: grid;
+    justify-items: center;
+    grid-template-areas: 
+    "h1"
+    "h2"
+    "img "
+    "text"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+main{
+    text-align: center;
+    div{
+        .home__titulo{
+                margin-top: 2%;
+        }
+        h2{
+            .Japones{
+                font-size: large;
+                font-family: serif;
+                }
+    }
+    div{
+        #text{
+            grid-area: text;
+            text-align: center;
+        } 
+        h2{
+            .home__titulo2{
+                font-size: 33px;
+                margin-top: 4%;
+            } 
+        }
+        h2{
+            .home__parrafo{
+                font-size: large; 
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 375px){
+    .home__parrafo{
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    .home__titulo{
+        margin-top: 9%;
+        font-size: 270%;
+}
+}
+
+@media (max-width: 375px){
+    .home__titulo2{
+        font-size: 160%;
+}
+}
+ 
+@media (max-width: 375px){
+    .redondeadoImagenes{
+    height: 17rem;
+}
+}  
+}
