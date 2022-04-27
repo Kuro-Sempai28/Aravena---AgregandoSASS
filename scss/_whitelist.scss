@@ -1,0 +1,93 @@
+/*CLASS WL*/
+   
+@keyframes wl__titulo{
+    from {
+        margin-right: 100%;
+        opacity: 0%;
+      }
+    
+      to {
+        margin-right: 15%;
+        opacity: 100%;
+      }
+
+}
+ .wl__titulo{
+    animation-name: wl__titulo;
+    animation-duration: 5s;
+    animation-delay: 0;
+}
+
+ .wl__titulo{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 450%;
+    margin: 15%;
+    color: rgb(56, 31, 58);
+    background-color: rgba(95, 83, 136, 0.412);
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px;
+    border-bottom-right-radius: 40px 40px;
+    
+
+ }
+ @media (max-width: 375px){
+     .wl__titulo{
+         font-size: 210%;
+         line-height: normal;
+     }
+ }
+ @media (max-width: 375px){
+    .wl__parrafo{
+        font-size: 65%;
+    }
+}
+ .wl__datos{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   font-size: larger;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color:  rgba(109, 100, 142, 0.94);
+   font-weight: 700;
+   background-color: rgba(95, 83, 136, 0.412);
+   background-size:auto;
+   padding-bottom: 10px;
+ }
+ .benefist__titulo{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 500%;
+    margin: 15%;
+    color: rgb(56, 31, 58);
+    background-color: rgba(95, 83, 136, 0.412);
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    border-bottom-left-radius: 40px 40px;
+    border-bottom-right-radius: 40px 40px;
+
+ }
+ .wl__imput{
+    height: 27px;
+    width: 100px; 
+    background: radial-gradient(rgba(23, 19, 38, 0.96), transparent);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(136, 124, 177);
+    margin: 2px;
+
+ }
+ @media (max-width: 375px){
+    .wl__imput{
+        height: auto;
+        width: auto;
+    }
+}
+ .wl__discord{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(136, 124, 177);
+    text-align: center;
+    margin-top: 40px;
+ }

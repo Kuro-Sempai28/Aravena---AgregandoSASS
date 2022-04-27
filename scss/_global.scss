@@ -20,10 +20,15 @@ h1{
     text-align: center;
     grid-area: h1; 
     margin-top: 10%;
+    color: $colorPrimario;
+}
+h2{
+    color: $colorSecundario;
 }
 
 p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: $colorTextos;
 }
 section{
     width: 100%;
@@ -31,52 +36,26 @@ section{
     padding: 0%;
 }
 
-
- // HOME
-
-.grid{
-    display: grid;
-    justify-items: center;
-    grid-template-areas: 
-    "h1"
-    "h2"
-    "img "
-    "text"
-    "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+img{
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
 }
 
-main{
-    text-align: center;
-    div{
-        .home__titulo{
-                margin-top: 2%;
-        }
-        h2{
-            .Japones{
-                font-size: large;
-                font-family: serif;
-                }
-    }
-    div{
-        #text{
-            grid-area: text;
-            text-align: center;
-        } 
-        h2{
-            .home__titulo2{
-                font-size: 33px;
-                margin-top: 4%;
-            } 
-        }
-        h2{
-            .home__parrafo{
-                font-size: large; 
-            }
-        }
-    }
+.fondo{
+    background-color: $colorBackgroud;
 }
+
+.color__titulo__navmovil{
+    color: rgb(4, 4, 27);
+}
+.color__Pages__navmovil{
+    color: rgb(11, 11, 82);
+}
+
+ 
+
 
 
 
@@ -104,4 +83,9 @@ main{
     height: 17rem;
 }
 }  
+   /* Bootstrap */
+   @media (min-width: 768px){
+    #vista__celular{
+        display: none;
+    }
 }

@@ -1,0 +1,45 @@
+
+
+.grid__home{
+    display: grid;
+    justify-items: center;
+    grid-template-areas: 
+    "h1"
+    "h2"
+    "img "
+    "text"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+main{
+    text-align: center;
+    .conteinersHome{
+        h1{
+            color: $colorPrimario;
+            margin-top: 2%;
+        }
+        h2{
+            color: $colorSecundario;
+            font-size: large;
+            font-family: serif;
+        }
+
+    }
+    #text{
+        grid-area: text;
+        text-align: center;
+        h2{
+            color: $colorSecundario;
+            font-size: 33px;
+            margin-top: 4%;
+        }
+        p{
+            color: $colorTextos;
+            font-size: large; 
+        }
+
+    }
+}

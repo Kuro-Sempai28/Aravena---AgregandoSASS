@@ -1,0 +1,163 @@
+.grid__wwa{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 15% 1.3fr 1.6fr 7%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ". wwa__titulo ."
+    "img texto img2"
+    ". form ."
+    ". footer ."; 
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    
+}
+
+
+section{
+    .conteinersWwa{
+        div{
+        h1{
+            grid-area: h1;
+            text-align: center;
+            margin: {
+                bottom: 5%;
+                top: 5%;
+            }
+            
+            font: {
+                family:'Chakra Petch', sans-serif;
+                size:200%;
+            }
+        }
+    }
+        div{
+            div{
+                img{
+                    @keyframes img{
+                        0%{opacity: 0;}
+                        100%{opacity: 1;}
+                    }
+                    grid-area: img;
+                    animation-name: img;
+                    animation-iteration-count:initial;
+                    animation-timing-function:ease-in-out;
+                    animation-duration: 10s;
+                    animation-delay: 0;
+                }
+            }
+            div{
+                .wwa__parrafo{
+                        grid-area: texto;
+                        font-family: 'Chakra Petch', sans-serif;
+                        font-size: 200%;
+                        color: $colorTextos;
+                        text-align: center;
+                        padding: 7%;
+                        line-height: 300%;
+                        animation-name: wwa__parrafo;
+                        animation-iteration-count:initial;
+                        animation-timing-function:ease-in-out;
+                        animation-duration: 3s;
+                        animation-delay: 0;  
+                        @keyframes wwa__parrafo{
+                            0%{opacity: 0;}
+                            100%{opacity: 1;}
+                        }    
+            }
+            }
+            div{
+                img{
+                    @keyframes img2{
+                        0%{opacity: 0;}
+                        100%{opacity: 1;}
+                    }
+                    
+                    animation-name: img2;
+                    animation-iteration-count:initial;
+                    animation-timing-function:ease-in-out;
+                    animation-duration: 10s;
+                    animation-delay: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+.text_img{
+    display: flex;
+    align-items: center;
+ }
+
+
+@media (max-width: 768px){
+    #img{
+        display: none;
+    }
+    #img2{
+        display: none;
+    }
+}
+
+.form { grid-area: form; }
+
+ .wwa__comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .wwa__comentarios__legend{
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 30px;
+     font-weight: bold;
+     color: rgba(109, 100, 142, 0.94);
+     text-align: center;
+     
+ }
+ @media (max-width: 375px){
+     .wwa__comentarios__legend{
+         font-size: 100%;
+         margin-bottom: 10%;
+     }
+ }
+
+ .wwa__comentarios_nombre{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color:  rgba(109, 100, 142, 0.94);
+     font-weight: 700;
+ }
+ .wwa__recuadro{
+    height: 17px;
+    width: 100px; 
+    background: radial-gradient( rgba(109, 100, 142, 0.94), transparent);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(136, 124, 177);
+    
+ }
+
+ .wwa__comentarios__comentarios{
+     margin-top: 5px;
+     background: radial-gradient( rgba(132, 122, 169, 0.94), transparent);
+ }
+ .wwa__boton{
+    background-color: rgba(85, 51, 99, 0.768);
+ }
+
+
+@media (max-width: 375px){
+    .wwa__parrafo{
+        font-size: 140%;
+        line-height: normal;
+    }
+}
+.wwa__ubicacionComentarios{
+  margin-left: 50px;
+}
+
+.wwa__ubicacionComentarios{
+   margin-left: 50px;
+}
