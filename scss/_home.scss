@@ -1,5 +1,3 @@
-
-
 .grid__home{
     display: grid;
     justify-items: center;
@@ -14,17 +12,18 @@
 }
 
 
-main{
+.conteinerHome{
     text-align: center;
-    .conteinersHome{
         h1{
-            color: $colorPrimario;
-            margin-top: 2%;
+            @extend .titulos;
+            @include margin(2%, 0%);
         }
         h2{
             color: $colorSecundario;
-            font-size: large;
-            font-family: serif;
+            font: {
+                size: large;
+                family: serif;
+            }
         }
 
     }
@@ -42,4 +41,24 @@ main{
         }
 
     }
+
+// Responsive
+
+@media (max-width: 375px){
+    .home__parrafo{
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    .home__titulo{
+        margin-top: 9%;
+        font-size: 270%;
+}
+}
+
+@media (max-width: 375px){
+    .home__titulo2{
+        font-size: 160%;
+}
 }

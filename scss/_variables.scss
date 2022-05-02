@@ -2,5 +2,11 @@ $colorPrimario: rgb(44, 21, 122);
 $colorSecundario: rgb(52, 17, 85);
 $colorBackgroud: rgb(40, 14, 61);
 $colorTextos: rgb(80, 72, 105);
+$colorBackgroudTextos:radial-gradient(rgba(23, 19, 38, 0.96), transparent);
 
-
+$estiloTextos: (
+    alineado: center,
+    color: rgb(80, 72, 105),
+    tFuente: 'Lucida Sans' 'Lucida Sans Regular' 'Lucida Grande' 'Lucida Sans Unicode' Geneva Verdana sans-serif,
+    size:30px,
+);

@@ -15,21 +15,12 @@
 }
 
 
-section{
-    .conteinersWwa{
-        div{
+.conteinerWwa{
+    div{
         h1{
             grid-area: h1;
-            text-align: center;
-            margin: {
-                bottom: 5%;
-                top: 5%;
-            }
-            
-            font: {
-                family:'Chakra Petch', sans-serif;
-                size:200%;
-            }
+            @extend .titulos;
+            @include margin(5%, 5%);
         }
     }
         div{
@@ -40,31 +31,35 @@ section{
                         100%{opacity: 1;}
                     }
                     grid-area: img;
-                    animation-name: img;
-                    animation-iteration-count:initial;
-                    animation-timing-function:ease-in-out;
-                    animation-duration: 10s;
-                    animation-delay: 0;
+                    animation: {
+                        name: img;
+                        iteration-count:initial;
+                        timing-function:ease-in-out;
+                        duration: 10s;
+                        delay: 0;
+                    }
                 }
             }
             div{
-                .wwa__parrafo{
-                        grid-area: texto;
-                        font-family: 'Chakra Petch', sans-serif;
-                        font-size: 200%;
-                        color: $colorTextos;
-                        text-align: center;
-                        padding: 7%;
-                        line-height: 300%;
-                        animation-name: wwa__parrafo;
-                        animation-iteration-count:initial;
-                        animation-timing-function:ease-in-out;
-                        animation-duration: 3s;
-                        animation-delay: 0;  
-                        @keyframes wwa__parrafo{
-                            0%{opacity: 0;}
-                            100%{opacity: 1;}
-                        }    
+                p{
+                grid-area: texto;
+                font-family: 'Chakra Petch', sans-serif;
+                font-size: 200%;
+                color: $colorTextos;
+                text-align: center;
+                padding: 7%;
+                line-height: 300%;
+                animation: {
+                    name: wwa__parrafo;
+                    iteration-count:initial;
+                    timing-function:ease-in-out;
+                    duration: 3s;
+                    delay: 0; 
+                }
+                @keyframes wwa__parrafo{
+                    0%{opacity: 0;}
+                    100%{opacity: 1;}
+                }    
             }
             }
             div{
@@ -73,16 +68,63 @@ section{
                         0%{opacity: 0;}
                         100%{opacity: 1;}
                     }
-                    
-                    animation-name: img2;
-                    animation-iteration-count:initial;
-                    animation-timing-function:ease-in-out;
-                    animation-duration: 10s;
-                    animation-delay: 0;
+                    animation: {
+                        name: img2;
+                        iteration-count:initial;
+                        timing-function:ease-in-out;
+                        duration: 10s;
+                        delay: 0;
+                    }
                 }
             }
         }
-    }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                grid-area: form;
+                legend{
+                    font: {
+                        family: 'Courier New', Courier, monospace;
+                        size: 30px;
+                        weight: bold;
+                    }
+                    color: rgba(109, 100, 142, 0.94);
+                    text-align: center;
+                }
+                div{
+                    margin-left: 50px;
+                    label{
+                        font: {
+                            family: Georgia, 'Times New Roman', Times, serif;
+                            weight: 700;
+                        }
+                        color:  rgba(109, 100, 142, 0.94);
+                    }
+                    input{
+                        font: {
+                            family: Georgia, 'Times New Roman', Times, serif;
+                            weight: bold;
+                        }
+                        color: $colorTextos;
+                        height: 17px;
+                        width: 100px; 
+                        background: $colorBackgroudTextos; 
+                    }
+                    input{
+                        height: 25px;
+                        background-color: rgba(85, 51, 99, 0.768);
+                    }
+                }
+                div{
+                    textarea{
+                        margin-top: 5px;
+                        background: $colorBackgroudTextos;
+                    }
+                }
+            }
+        }
 }
 
 
@@ -90,8 +132,9 @@ section{
 .text_img{
     display: flex;
     align-items: center;
- }
+}
 
+// Responsive
 
 @media (max-width: 768px){
     #img{
@@ -102,62 +145,16 @@ section{
     }
 }
 
-.form { grid-area: form; }
-
- .wwa__comentarios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 375px){
+    .wwa__comentarios__legend{
+        font-size: 100%;
+        margin-bottom: 10%;
+    }
 }
- .wwa__comentarios__legend{
-     font-family: 'Courier New', Courier, monospace;
-     font-size: 30px;
-     font-weight: bold;
-     color: rgba(109, 100, 142, 0.94);
-     text-align: center;
-     
- }
- @media (max-width: 375px){
-     .wwa__comentarios__legend{
-         font-size: 100%;
-         margin-bottom: 10%;
-     }
- }
-
- .wwa__comentarios_nombre{
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     color:  rgba(109, 100, 142, 0.94);
-     font-weight: 700;
- }
- .wwa__recuadro{
-    height: 17px;
-    width: 100px; 
-    background: radial-gradient( rgba(109, 100, 142, 0.94), transparent);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: rgb(136, 124, 177);
-    
- }
-
- .wwa__comentarios__comentarios{
-     margin-top: 5px;
-     background: radial-gradient( rgba(132, 122, 169, 0.94), transparent);
- }
- .wwa__boton{
-    background-color: rgba(85, 51, 99, 0.768);
- }
-
 
 @media (max-width: 375px){
     .wwa__parrafo{
         font-size: 140%;
         line-height: normal;
     }
-}
-.wwa__ubicacionComentarios{
-  margin-left: 50px;
-}
-
-.wwa__ubicacionComentarios{
-   margin-left: 50px;
 }

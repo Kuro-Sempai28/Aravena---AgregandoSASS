@@ -1,63 +1,87 @@
-/*CLASS BENEFIST*/
+.conteinerBenefist{
+    h1{
+        font: {
+            family: 'Chakra Petch', sans-serif;
+            size: 500%;
+        }
+        color: $colorPrimario;
+        margin: 15%;
+        border-top-left-radius: 40px 40px;
+        border-top-right-radius: 40px 40px;
+        border-bottom-left-radius: 40px 40px;
+        border-bottom-right-radius: 40px 40px;
+        animation: {
+            name: benefist__titulo;
+            duration: 5s;
+            delay: 0;
+        }
+    }
+    div{
+        p{
+            font: {
+                family: map-get($estiloTextos, $key: tFuente);
+                size: map-get($estiloTextos, $key: size);
+            }
+        text-align: center;
+        padding: 0px 200px;
+        color: $colorTextos;
+        background-color: $colorBackgroudTextos;
+        @extend .rectanguloRedondeado;
+            animation: {
+                name: benefist__parrafo;
+                duration: 5s;
+                delay: 0;
+        }
+    }
+    }
+}
+
+
+
+
+
+
+
+/*Animaciones*/
     
 @keyframes benefist__parrafo{
     from {
         margin-left: 100%;
         width: 300%
-      }
+    }
     
-      to {
+    to {
         margin-left: 0%;
         width: 100%;
-      }
+    }
+}
+ 
+
+@keyframes benefist__titulo{
+    from {
+        margin-right: 100%;
+        opacity: 0%;
+    }
+    
+    to {
+        margin-right: 15%;
+        opacity: 100%;
+    }
 
 }
- .benefist__parrafo{
-    animation-name: benefist__parrafo;
-    animation-duration: 5s;
-    animation-delay: 0;
-}
- .benefist__parrafo{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 30px;
-    padding: 0px 200px;
-    color: rgb(56, 31, 58);
-    background-color: rgba(95, 83, 136, 0.804);
-    border-top-left-radius: 40px 40px;
-    border-top-right-radius: 40px 40px;
-    border-bottom-left-radius: 40px 40px;
-    border-bottom-right-radius: 40px 40px;
+
+/*Responsive*/
+
+@media (max-width: 375px){
+    .benefist__titulo{
+        font-size: 250%;
+        line-height: normal;
+    }
 }
 @media (max-width: 375px){
     .benefist__parrafo{
         font-size: 150%;
         padding: 5%;
         margin: 2%;
-    }
-}
-
-@keyframes benefist__titulo{
-    from {
-        margin-right: 100%;
-        opacity: 0%;
-      }
-    
-      to {
-        margin-right: 15%;
-        opacity: 100%;
-      }
-
-}
- .benefist__titulo{
-    animation-name: benefist__titulo;
-    animation-duration: 5s;
-    animation-delay: 0;
-}
-
-@media (max-width: 375px){
-    .benefist__titulo{
-        font-size: 250%;
-        line-height: normal;
     }
 }

@@ -1,123 +1,123 @@
-// Our Collention (nft)
+.conteinerNft{
+    h1{
+        @extend .titulos;
+        @include margin(5%, 5%);
+        
+    }
+    .nft__video{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5%;
+    }
+}
+
+
+// Responsive
 
 
 @media (min-width: 320px){
     .nft__tamaño-img1{
-       height: 350px;
-       width: 70%;
-       margin-left: 15%;
-       margin-bottom: 20%;
-       border-radius: 20%;
-   }
-   }
-   
-   @media (min-width: 320px){
-       .nft__tamaño-img2y3{
-          height: 350px;
-          width: 70%;
-          margin-left: 16%;
-          margin-bottom: 20%;
-          border-radius: 20%;
-      }
-      }
+    height: 350px;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 20%;
+    border-radius: 20%;
+    }
+}
+
+@media (min-width: 320px){
+    .nft__tamaño-img2y3{
+        height: 350px;
+        width: 70%;
+        margin-left: 16%;
+        margin-bottom: 20%;
+        border-radius: 20%;
+    }
+}
     @media (min-width: 767px){
     .nft__tamaño-img1{
-       height: 500px;
-       margin-left: 16%;
-       margin-bottom: 20%;
-       border-radius: 20%;
-   }
-   }
+    height: 500px;
+    margin-left: 16%;
+    margin-bottom: 20%;
+    border-radius: 20%;
+    }
+}
+
+@media (min-width: 767px){
+    .nft__tamaño-img2y3{
+        height: 500px;
+        margin-left: 16%;
+        margin-bottom: 20%;
+        border-radius: 20%;
+    }
+}
    
-   @media (min-width: 767px){
-       .nft__tamaño-img2y3{
-          height: 500px;
-          margin-left: 16%;
-          margin-bottom: 20%;
-          border-radius: 20%;
-      }
-      }
-   
-       @media (min-width: 1024px){
-       .nft__tamaño-img1{
-          height: 500px;
-          width: 40%;
-          height: 33%;
-          margin-left: 30%;
-          margin-bottom: 15%;
-          border-radius: 20%;
-      }
-      }
-      
-   @media (min-width: 1024px){
-       .nft__tamaño-img2y3{
-          height: 500px;
-          width: 40%;
-          height: 33%;
-          margin-left: 30%;
-          margin-bottom: 15%;
-          border-radius: 20%;
-       }
-       } 
+    @media (min-width: 1024px){
+    .nft__tamaño-img1{
+        height: 500px;
+        width: 40%;
+        height: 33%;
+        margin-left: 30%;
+        margin-bottom: 15%;
+        border-radius: 20%;
+    }
+}
+@media (min-width: 1024px){
+    .nft__tamaño-img2y3{
+        height: 500px;
+        width: 40%;
+        height: 33%;
+        margin-left: 30%;
+        margin-bottom: 15%;
+        border-radius: 20%;
+    }
+} 
     @media (min-width: 1200px){
     .nft__tamaño-img1{
-       height: 500px;
-       width: 40%;
-       margin-left: 30%;
-       margin-bottom: 10%;
-       border-radius: 20%;
-   }
-   }
-   
-   @media (min-width: 1200px){
-       .nft__tamaño-img2y3{
-          height: 500px;
-          width: 40%;
-          margin-left: 31%;
-          margin-bottom: 10%;
-          border-radius: 20%;
-      }
-      }
-   
-    @media (min-width: 1440px){
-    .nft__tamaño-img1{
-       height: 500px;
-       width: 40%;
-       margin-left: 37%;
-       margin-bottom: 10%;
-       border-radius: 20%;
-   }
-   }
-   
-   @media (min-width: 1440px){
-       .nft__tamaño-img2y3{
-          height: 500px;
-          width: 40%;
-          margin-left: 31%;
-          margin-bottom: 10%;
-          border-radius: 20%;
-      }
-      }
-   
-   
-    .nft__titulo{
-       font-family: 'Chakra Petch', sans-serif;
-       font-size: 500%;
-       margin-bottom: 5%;
-       margin-top: 5%;
-   
+    height: 500px;
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    border-radius: 20%;
     }
+}
+
+@media (min-width: 1200px){
+    .nft__tamaño-img2y3{
+        height: 500px;
+        width: 40%;
+        margin-left: 31%;
+        margin-bottom: 10%;
+        border-radius: 20%;
+    }
+}   
+@media (min-width: 1440px){
+    .nft__tamaño-img1{
+    height: 500px;
+    width: 40%;
+    margin-left: 37%;
+    margin-bottom: 10%;
+    border-radius: 20%;
+    }
+}
+
+@media (min-width: 1440px){
+    .nft__tamaño-img2y3{
+        height: 500px;
+        width: 40%;
+        margin-left: 31%;
+        margin-bottom: 10%;
+        border-radius: 20%;
+    }
+}   
     @media (max-width: 768px){
-       .nft__selector{
-           width: 80%;
-       }
+    .nft__selector{
+        width: 80%;
+    }
     }
     @media (max-width: 375px){
         .nft__titulo{
             font-size: 230%;
         }
-    }
-    .nft__video{
-        display: flex;
-        justify-content: center;
-    }
+}
+  
