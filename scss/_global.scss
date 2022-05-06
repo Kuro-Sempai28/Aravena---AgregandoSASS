@@ -19,7 +19,11 @@
     }
 }
 
-
+@media (max-width: 767px){
+    #menu{
+        display: none;
+    }
+}
 
 
 h2{
@@ -44,14 +48,18 @@ img{
 }
 
 .fondo{
-    background-color: $colorBackgroud;
+    background-image: url(../img/universe\ fondo\ 3.jpg);
+    background-size: cover;
 }
 
 .color__titulo__navmovil{
-    color: rgb(4, 4, 27);
+    color: silver;
+    font-size: 2rem;
+    background: rgb(4, 4, 27);
 }
 .color__Pages__navmovil{
-    color: rgb(11, 11, 82);
+    font-size: 1rem;
+    background: linear-gradient(to bottom, rgb(4, 4, 27), rgb(15, 15, 68));
 }
 
 * {
@@ -79,5 +87,6 @@ main{
    @media (min-width: 768px){
     #vista__celular{
         display: none;
+        margin-bottom: 50%;
     }
 }

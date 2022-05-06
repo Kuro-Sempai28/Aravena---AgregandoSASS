@@ -1,18 +1,13 @@
 .conteinerWhitelist{
     h1{
-        animation: {
-            name: wl__titulo;
-            duration: 5s;
-            delay: 0; 
-        }
+        text-align: center;
         font: {
             family: 'Chakra Petch', sans-serif;
             size: 450%;
         }
         
-        margin: 15%;
-        color: rgb(56, 31, 58);
-        @extend .rectanguloRedondeado;
+        margin: 10%;
+        color: rgb(167, 100, 173);
     }
     form{
         display: flex;
@@ -60,18 +55,6 @@ div{
 }
 
 
-/*Animaciones*/
-@keyframes wl__titulo{
-    from {
-        margin-right: 100%;
-        opacity: 0%;
-    }
-    
-    to {
-        margin-right: 15%;
-        opacity: 100%;
-    }
-}
 /*Responsive*/
 
  @media (max-width: 375px){

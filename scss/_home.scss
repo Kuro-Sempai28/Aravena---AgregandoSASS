@@ -25,6 +25,21 @@
                 family: serif;
             }
         }
+        img{
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            grid-area: img;
+            align-self: center;
+            animation: {
+                name: animacionImagenCentral;
+                iteration-count:initial;
+                timing-function:ease-in-out;
+                duration: 5s;
+                delay: 0;
+            }
+            
+        }
 
     }
     #text{
@@ -62,3 +77,11 @@
         font-size: 160%;
 }
 }
+
+// Animaciones
+
+@keyframes animacionImagenCentral{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+

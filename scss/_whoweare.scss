@@ -149,12 +149,9 @@
     .wwa__comentarios__legend{
         font-size: 100%;
         margin-bottom: 10%;
-    }
-}
-
-@media (max-width: 375px){
-    .wwa__parrafo{
-        font-size: 140%;
+        .conteinerWwa{
+        font-size: 14px;
         line-height: normal;
     }
+}
 }
