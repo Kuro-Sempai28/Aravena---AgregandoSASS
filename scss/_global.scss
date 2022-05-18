@@ -58,8 +58,12 @@ img{
     background: rgb(4, 4, 27);
 }
 .color__Pages__navmovil{
-    font-size: 1rem;
+    color: silver;
     background: linear-gradient(to bottom, rgb(4, 4, 27), rgb(15, 15, 68));
+}
+.nav-item-margin{
+    margin-top: 10%;
+    font-size: 150%;
 }
 
 * {

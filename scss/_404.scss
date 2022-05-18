@@ -1,0 +1,49 @@
+.body__404{
+    margin: 0%;
+    padding: 0%;
+    height: 100fr;
+}
+.conteiner__404{
+    background-image: url(../img/universe\ fondo.jpg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    h1{
+        font-family: Espacial;
+        font-size: 200px;
+        color: rgb(17, 17, 17);
+    }
+    h2{
+        font-family: Espacial;
+        font-size: large;
+        color: $colorTextos;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+        @keyframes astronauta{
+            0%{padding-top: 0px;}
+            50%{padding-top: 20px;}
+            100%{padding-top: 0px;}
+        }
+        animation: {
+            name:astronauta;
+            iteration-count: infinite;
+            duration:5s;
+            delay: 0; 
+        }
+    }
+    h5{
+        font-family: Espacial;
+        color: $colorTextos;
+        margin-top: 40px;
+    }
+}
+
+
+@font-face{
+    font-family:Espacial;
+    src: url(../img/fuente-espacial.otf);
+}

@@ -1,6 +1,7 @@
 .footer{
     nav{
         grid-area: footer;
+        justify-content: center;
         p{
             text-align: center;
             margin-top: 50px;
@@ -27,4 +28,18 @@
             }
         }
     }
+}
+
+
+
+
+// Responsive
+@media (max-width: 375px){
+.footer{
+    nav{
+        grid-area: footer;
+        justify-content: center;
+        margin-left: 140px;
+    }
+}
 }
