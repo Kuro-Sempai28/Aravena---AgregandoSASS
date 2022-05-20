@@ -77,3 +77,32 @@ div{
     }
 }
 
+@media (max-width: 398px){
+    .conteinerWhitelist{
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 10px;
+            color: $colorTextos;
+            text-align: center;
+            font: {
+                family: Georgia, 'Times New Roman', Times, serif;
+                weight: 700;
+            }
+            background: {
+                color: $colorBackgroudTextos;
+                size:auto;
+            }
+            
+            div{
+                input{
+                        margin-left: 0.2px;
+            }
+            .wl__checkbox{
+                width:20px;
+            } 
+        }
+}
+}
+}

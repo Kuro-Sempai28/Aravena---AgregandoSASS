@@ -21,6 +21,7 @@
         color: $colorTextos;
     }
     img{
+        background-size: 300px;
         width: 250px;
         height: 250px;
         @keyframes astronauta{
@@ -46,4 +47,20 @@
 @font-face{
     font-family:Espacial;
     src: url(../img/fuente-espacial.otf);
+}
+
+
+
+// Resposive
+
+@media (max-width: 430px){
+    .conteiner__404{
+        h1{
+            font-size: 100px;
+    }
+        img{
+            width: 200px;
+            height: 200px;
+    } 
+}
 }
