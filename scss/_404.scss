@@ -52,12 +52,15 @@
 
 
 // Resposive
-*{
-    margin: 0%;
-    padding: 0%;
-    height: 100%;
-}
+
 @media (max-width: 430px){
+    .body__404{
+        margin: 0%;
+        padding: 0%;
+        height: 100%;
+        background: cover;
+        background-size: 100%;
+    }
     .conteiner__404{
         h1{
             font-size: 100px;
